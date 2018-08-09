@@ -31,8 +31,14 @@
 
 #lnb>ul{width:100%;}
 #lnb>ul>li{float:left;width:16.66%;height:40px;
-	border-right:1px solid #5785b6;border-bottom:1px solid #2b426c;}
+	border-right:1px solid #5785b6;}
 #lnb li:first-child{border-left:1px solid #5785b6;}
 #lnb>ul>li>a{display:block;height:40px;line-height:40px;
 	text-align:center;color:white;font-weight:bold;}
 #lnb>ul>li>a:hover{background:skyblue;color:#1c5da3;}
+
+/*visual_wrap*/
+#visual_wrap{height:400px;background:#203969 url(../images/visual2.png) no-repeat center}
+#visual_wrap #visual{width: 980px;margin: 0 auto;height:400px;position:relative;}
+#visual_wrap .img01{position: absolute;right: 0;bottom: 0;}
+#visual_wrap .img02{position: absolute;left: 0;top: 50px;}
