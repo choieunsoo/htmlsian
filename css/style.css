@@ -2,12 +2,13 @@
 *{box-sizing:border-box;}
 /*리셋에서는 사용하지말고 스타일하면서 넣어줄수있다.*/
 
+/*main_heder*/
 #main_header{width:100%; }
 #main_gnb_wrap{width:100%;border-bottom:1px solid #ddd;height:30px;}
 #main_gnb{width:980px;margin:0 auto;/*background:#ccc;*/}
 #main_gnb:after{content:"";display: block;clear: both;}
 
-#gnb{}
+/*#gnb*/
 #gnb>ul{/*margin-top:2px;*/padding-top:5px;float:right;}
 #gnb>ul:after{content:"";display: block;clear: both;}
 #gnb>ul>li{float:left;border-left:1px solid #000;}
@@ -17,8 +18,20 @@
 	height:20px;line-height:20px;}
 #gnb>ul>li>a:hover{color:skyblue;/*font-weight:bold;*/}
 
+/*logo*/
 #logo_wrap{width:980px;height:60px;margin:0 auto;position: relative;/*background:#aaa;*/padding-top:7px;}
 #logo_wrap>h1{width:250px;/*background:#ccc;*/text-align:center;margin:0 auto;}
 #logo_wrap>div.toggle{position:absolute;top: 5px;right: 0;}
 
+/*main_lnb*/
+#main_lnb_wrap{background:#1c5da3;}
+#main_lnb{width:980px;margin:0 auto;}
 
+
+#lnb>ul{width:100%;}
+#lnb>ul>li{float:left;width:16.66%;height:40px;
+	border-right:1px solid #5785b6;border-bottom:1px solid #2b426c;}
+#lnb li:first-child{border-left:1px solid #5785b6;}
+#lnb>ul>li>a{display:block;height:40px;line-height:40px;
+	text-align:center;color:white;font-weight:bold;}
+#lnb>ul>li>a:hover{background:skyblue;color:#1c5da3;}
