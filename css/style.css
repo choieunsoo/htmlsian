@@ -1,6 +1,7 @@
 @charset "utf-8";
 *{box-sizing:border-box;}
 /*리셋에서는 사용하지말고 스타일하면서 넣어줄수있다.*/
+.clearfix:after{content:"";display: block;clear: both;}
 
 /*main_heder*/
 #main_header{width:100%; }
