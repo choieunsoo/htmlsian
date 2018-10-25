@@ -6,7 +6,23 @@
 	<title>하이미디어</title>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script>
+		$(function(){
+			$("#lnb>ul>li").hover(function(){
+				var i = $(this).index();
+				$("ul.sub").eq(i).show();
+				$("#lnb>ul>li").css("height",80);
+			},function(){
+				$("ul.sub").hide();
+				$("#lnb>ul>li").css("height",40);
+			});
+		});
+	</script>
 </head>
+<script>
+	
+</script>
 <body>
 	<header id="main_header">
 		<div id="main_gnb_wrap">  <!-- 100% -->
@@ -31,18 +47,65 @@
 			<div id="main_lnb">
 				<nav id="lnb">
 					<ul class="clearfix">
-						<li><a href="#">회사소개</a></li>
-						<li><a href="#">제품소개</a></li>
-						<li><a href="#">사업영역</a></li>
-						<li><a href="#">고객센터</a></li>
-						<li><a href="#">사회공헌</a></li>
-						<li><a href="#">인재채용</a></li>
+						<li>
+							<a href="#">회사소개</a>
+							<ul class="sub" >
+								<li><a href="#">smenu1</a></li>
+								<li><a href="#">smenu2</a></li>
+								<li><a href="#">smenu3</a></li>
+								<li><a href="#">smenu4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">제품소개</a>
+							<ul class="sub" style="padding-left:80px;">
+								<li><a href="#">smenu1</a></li>
+								<li><a href="#">smenu2</a></li>
+								<li><a href="#">smenu3</a></li>
+								<li><a href="#">smenu4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">사업영역</a>
+							<ul class="sub" style="padding-left:200px;">
+								<li><a href="#">smenu1</a></li>
+								<li><a href="#">smenu2</a></li>
+								<li><a href="#">smenu3</a></li>
+								<li><a href="#">smenu4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">고객센터</a>
+							<ul class="sub" style="padding-left:380px;">
+								<li><a href="#">smenu1</a></li>
+								<li><a href="#">smenu2</a></li>
+								<li><a href="#">smenu3</a></li>
+								<li><a href="#">smenu4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">사회공헌</a>
+							<ul class="sub" style="padding-left:520px;">
+								<li><a href="#">smenu1</a></li>
+								<li><a href="#">smenu2</a></li>
+								<li><a href="#">smenu3</a></li>
+								<li><a href="#">smenu4</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">인재채용</a>
+							<ul class="sub" style="padding-left:580px;">
+								<li><a href="#">smenu1</a></li>
+								<li><a href="#">smenu2</a></li>
+								<li><a href="#">smenu3</a></li>
+								<li><a href="#">smenu4</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
 
-		
 	</header>
 	<div id="visual_wrap">
 		<div class="visual">
